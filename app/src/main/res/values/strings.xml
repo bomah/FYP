@@ -1,0 +1,24 @@
+<resources>
+<string name="app_name">FYP115494258</string>
+
+<string name="email">Email</string>
+
+<!--Referred to the following url:https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+    This enabled me to be able to render special characters using xml
+    -->
+
+<string-array name="menu_items">
+    <item>Starters</item>
+    <item>Homemade soup of the day with Farmgate brown soda bread &#8211; &#8364; 4.75</item>
+    <item>Bacon caesar salad &#8211; &#8364; 8.00</item>
+    <item>Chargrilled chicken caesar salad &#8211; &#8364; 8.00</item>
+    <item>Main Dishes</item>
+    <item>Panfried Lambs Liver &amp; Bacon served with seasonal potatoes &amp; vegetables &#8211; &#8364; 13.50</item>
+    <item>Farmgate Shepards Pie served with garlic bread &amp; salad or seasonal potatoes &amp; vegetables &#8211; &#8364; 12.00</item>
+    <item>Traditional Irish Lamb Stew &#8211; &#8364; 12.00</item>
+    <item>Pasta of the day served with garlic bread &#8211; &#8364; 14.00</item>
+
+</string-array>
+
+
+</resources>

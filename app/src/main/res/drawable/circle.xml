@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+         android:shape="oval">
+
+    <solid android:color="@color/solidCircle"/>
+
+
+</shape>
+
+
+<!-- Created circle.xml, circle_border.xml,grad.xml,ic_settings.xml
+     from following along to this youtube video: https://www.youtube.com/watch?v=IYJHQnZPAFk
+
+-->
