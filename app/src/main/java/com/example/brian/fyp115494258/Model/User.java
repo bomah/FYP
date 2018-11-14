@@ -2,32 +2,33 @@ package com.example.brian.fyp115494258.Model;
 
 public class User {
 
-    private String Name;
-    private String Password;
+    private String name;
+    private String password;
 
     public User(){
 
     }
 
-    public User(String name, String password){
-        setName(name);
-        setPassword(password);
+    public User(String Name, String Password){
+        setName(Name);
+        setPassword(Password);
 
     }
 
+
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String password) {
-        Password = password;
+        this.password = password;
     }
 }
