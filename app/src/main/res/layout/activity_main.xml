@@ -28,7 +28,7 @@ tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/grad"
-    android:paddingBottom="20dp"
+    android:paddingBottom="10dp"
     >
 
     <RelativeLayout
@@ -37,11 +37,11 @@ tools:context=".MainActivity"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/circle_border"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="@drawable/circle"
             android:src="@drawable/farmgate"
             android:layout_margin="9dp"
@@ -91,7 +91,7 @@ tools:context=".MainActivity"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="10dp"/>
 
 
 </RelativeLayout>
@@ -180,134 +180,175 @@ tools:context=".MainActivity"
 
 </LinearLayout>
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@+id/linlayout1"
-    android:scrollbars="vertical">
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical"
-        android:layout_centerInParent="true"
-        >
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linlayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:scrollbars="vertical">
 
-
+<!--
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="15dp">
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="13sp"
-                android:textColor="@color/headings"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Farmgate Restaurant is renowned for it's local,seasonal and fresh produce and has become a national and international landmark. "
-                android:fontFamily="sans-serif-light"
-                android:textSize="11dp"
-                android:textColor="#000000"
-                />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="15dp"
-                android:background="@color/grey"/>
-
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:textSize="13sp"
-                android:textColor="@color/headings"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="restaurant@farmgate.ie"
-                android:fontFamily="sans-serif-light"
-                android:textSize="11dp"
-                android:textColor="#000000"
-                />
-
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Farmgate Restaurant is renowned for it's local,seasonal and fresh produce and has become a national and international landmark. "
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="restaurant@farmgate.ie"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@color/grey"/>
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="@color/headings"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="021 463 27 71"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/grey" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+-->
+        <!--
+        <Button
+            android:id="@+id/btnFirebase"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="15dp">
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="141dp"
+            android:layout_marginRight="141dp"
+            android:layout_marginBottom="75dp"
+            android:text="Click me" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phone"
-                android:textSize="13sp"
-                android:textColor="@color/headings"/>
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="214dp"
+            android:ems="10"
+            android:hint="Pease Enter Name"
+            android:inputType="textPersonName" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="021 463 27 71"
-                android:fontFamily="sans-serif-light"
-                android:textSize="11dp"
-                android:textColor="#000000"
-                />
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="86dp"
+            android:ems="10"
+            android:hint="Please Enter Email"
+            android:inputType="textPersonName" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="15dp"
-                android:background="@color/grey"/>
-
-
-        </LinearLayout>
-
-
-
-
-
-
-
-
-
+            -->
 
 
-    </LinearLayout>
+        <ListView
+            android:id="@+id/user_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginRight="67dp" />
+    </RelativeLayout>
 
-
-
-
-</RelativeLayout>
 
 
 

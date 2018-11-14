@@ -21,4 +21,9 @@
     <color name="grey">#E5E5E5</color>
 
     <color name="white">#FFFFFF</color>
+
+    <!--2nd iteration-->
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
 </resources>
