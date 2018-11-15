@@ -19,12 +19,16 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
+//Referred to the following youtube videohttps://www.youtube.com/watch?v=fItHmbRQUW8&t=0s&list=PLaoF-xhnnrRW4lXuIhNLhgVuYkIlF852V&index=10
+//to aid my understanding
+
+
 public class RestaurantDetail extends AppCompatActivity {
 
-    TextView restaurant_name, restaurant_location, restaurant_description;
+    TextView restaurant_name, restaurant_location, restaurant_description,restaurant_phoneNumber;
     ImageView restaurant_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
-    //FloatingActionButton btnCart;
+
     ElegantNumberButton numberButton;
     FirebaseDatabase database;
     DatabaseReference restaurant;
@@ -43,33 +47,13 @@ public class RestaurantDetail extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         restaurant = database.getReference("Restaurant");
 
-        //Init View
-        numberButton = (ElegantNumberButton) findViewById(R.id.number_button);
-        //btnCart = (FloatingActionButton) findViewById(R.id.btnCart);
-
-        /*
-
-        btnCart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                new Database(getBaseContext()).addToCart(new Order(
-                        foodId,
-                        currentFood.getName(),
-                        numberButton.getNumber(),
-                        currentFood.getPrice(),
-                        currentFood.getDiscount()
-                ));
 
 
-            }
-        });
-
-        */
 
         restaurant_description = (TextView) findViewById(R.id.restaurant_description);
         restaurant_name = (TextView) findViewById(R.id.restaurant_name);
         restaurant_location = (TextView) findViewById(R.id.restaurant_location);
+        restaurant_phoneNumber= (TextView) findViewById(R.id.restaurant_phoneNumber);
         restaurant_image = (ImageView) findViewById(R.id.img_restaurant);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing);
@@ -101,6 +85,8 @@ public class RestaurantDetail extends AppCompatActivity {
                 restaurant_name.setText(currentRestaurant.getName());
 
                 restaurant_description.setText(currentRestaurant.getDescription());
+
+                restaurant_phoneNumber.setText(currentRestaurant.getPhoneNumber());
 
             }
 

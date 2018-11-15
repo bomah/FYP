@@ -12,6 +12,10 @@
 
 
     <!--2nd iteration-->
+    <!--Referred to the following videos https://www.youtube.com/playlist?list=PLaoF-xhnnrRW4lXuIhNLhgVuYkIlF852V
+     to enable me to setup the application-->
+
+
 
     <include
         layout="@layout/app_bar_home"

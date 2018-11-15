@@ -108,69 +108,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*
-        txtName = (TextView) findViewById(R.id.txtName);
-
-        mdatabase.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                String name = dataSnapshot.getValue().toString();
-
-                txtName.setText("Name:" +name);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-
-        */
-
-        /*
-        txtName = (EditText) findViewById(R.id.txtName);
-
-        txtEmail = (EditText) findViewById(R.id.txtEmail);
-
-
-        btnFirebase.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String name = txtName.getText().toString().trim();
-                String email = txtEmail.getText().toString().trim();
-
-                HashMap<String, String> dataMap = new HashMap<String, String>();
-
-                //key as name , value from string variable
-                dataMap.put("Name",name);
-                dataMap.put("Email",email);
-
-
-
-                //with the root element - creating a child  object called Name and setting value
-                mdatabase.push().setValue(dataMap).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-
-                        if(task.isSuccessful()) {
-
-                            Toast.makeText(MainActivity.this, "Stored...", Toast.LENGTH_LONG).show();
-
-                        } else {
-                                Toast.makeText(MainActivity.this,"Error...",Toast.LENGTH_LONG).show();
-                            }
-
-                        }
-
-                });
-
-            }
-
-        });
-
-        */
 
     }
 

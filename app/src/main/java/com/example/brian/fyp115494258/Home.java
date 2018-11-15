@@ -50,6 +50,10 @@ import com.squareup.picasso.Picasso;
 import java.util.Locale;
 import java.util.UUID;
 
+
+//Referred to the following videos https://www.youtube.com/playlist?list=PLaoF-xhnnrRW4lXuIhNLhgVuYkIlF852V
+// to enable me to setup the application
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

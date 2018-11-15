@@ -22,7 +22,8 @@ public class SignIn extends AppCompatActivity {
     EditText edtPhone,edtPassword;
     Button btnSignIn;
 
-
+    //Referred to the following youtube video https://www.youtube.com/watch?v=Ad41Bh704ms&t=0s&list=PLaoF-xhnnrRW4lXuIhNLhgVuYkIlF852V&index=2
+    //to aid me in setting up the Log in
 
 
     @Override
